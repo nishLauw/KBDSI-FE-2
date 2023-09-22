@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KBDSI-app';
+  simpleNotification(){
+    Swal.fire('simple Notification');
+  }
+
+  succesNotification(){
+    Swal.fire('Hi', 'We have been informed!', 'success');
+  }
+
+  errorNotification(){
+    Swal.fire('Hi', 'We have been informed!', 'error');
+  }
 }
