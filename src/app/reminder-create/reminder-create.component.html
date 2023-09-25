@@ -1,0 +1,63 @@
+<main class="flex items-center justify-center h-screen bg-gray-200">
+    <form>
+      <div class="bg-white w-[500px] p-6 rounded shadow-sm">
+        <!-- <div class="bg-red-500 px-3 py-2 ronded text-gray-100 mb-3">
+          <p>wrong email entered</p>
+        </div> --> 
+        <h1 class="flex items-center justify-center font-bold py-2 mb-12 text-3xl">Create New Reminder</h1>
+
+        <div class="text-base">
+            <label class="text-gray-700">Select Email</label>
+        <div class="">
+            <!-- <div class="mt-6 flex"> -->
+                <label class="block w-full">
+                    <select class="py-2 bg-gray-100 text-gray-700 px-1 outline-none mb-4 form-select mt-1 block w-full">
+                        <option>ckctm12@gmail.com</option>
+                        <option>thuhang.nute@gmail.com</option>
+                        <option>manhhachkt08@gmail.com</option>
+                        <option>binhan628@gmail.com</option>
+                        <option>tienlapspktnd@gmail.com</option>
+                    </select>
+                </label>
+            <!-- </div> -->
+        </div>
+        <label class="text-gray-700">Description</label>
+        <input class="w-full py-2 bg-gray-100 text-gray-700 px-1 outline-none mb-4" type="description" required/>
+        <label class="text-gray-700">Date</label>
+        <div class="">
+                <label class="block flex-1">
+                    <input type="date" class="w-full py-2 bg-gray-100 text-gray-700 px-1 outline-none mb-4 form-input mt-1 block">
+                </label>
+        </div>
+        <label class="text-gray-700">Amount</label>
+        <input class="w-full py-2 bg-gray-100 text-gray-700 px-1 outline-none mb-4" type="amount" placeholder="Rp." required/>
+
+        <label class="text-gray-700">Repeated</label>
+        <fieldset class="m-1 pb-1">
+            <!-- <legend>Choose your delivery preference</legend> -->
+            <div class="form__group">
+                <input type="radio" id="delivery_1" value="collect" name="delivery">
+                <label for="delivery_1"> Yes</label>
+            </div>
+            <div class="form__group">
+                <input type="radio" id="delivery_2" value="home-delivery" name="delivery">
+                <label for="delivery_2"> No</label>
+            </div>
+        </fieldset>
+        </div>
+        
+  
+        
+        <div class="flex justify-end mt-8">
+            <!-- <button (click)="alertWithSuccees()" routerLink="/user" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 mx-1 rounded">
+                Cancel
+              </button> -->
+              <!-- (click)="simpleAlert() -->
+            <button  class="bg-slate-800 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-1 rounded">
+                Save
+              </button>
+          </div>
+
+    </div>
+    </form>
+  </main>

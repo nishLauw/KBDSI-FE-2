@@ -1,37 +1,35 @@
-<div class="w-screen flex-col">
-  <nav class="w-screen h-[60px] bg-slate-800 text-white">
+<!-- <div class="w-screen flex-col">
+  <nav class=" fixed top-0 w-screen h-[60px] bg-slate-800 text-white">
     <div class="flex justify-end h-full container items-center mx-auto gap-8">
       <a routerLink="/help">Help</a>
       <a routerLink="/users">Users</a>
     </div>
   </nav>
-</div>
+</div> -->
   <!-- <div class="p-8 mt-[60px] flex-1"> -->
 
 
 <!-- Content -->
-  <div class="w-screen px-8 py-2 bg-gray-100">
-    <h1 class="text-4xl font-bold my-10">User</h1>
+  <div class="w-screen h-screen  px-8 py-2 bg-gray-100">
+    <h1 class="text-4xl font-bold my-10">USER</h1>
 
-    <div>
-      <label class="relative block">
-        <!-- <span class="sr-only">Search</span> -->
-        <!-- <span class="inset-y-0 left-0 flex items-center pl-2"> -->
-          <!-- <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"> -->
-            <!-- ...</svg> -->
-        <!-- </span> -->
-        <div>
-          <input class="placeholder:italic placeholder:text-slate-400 block bg-white border border-slate-300 rounded-md mb-2 py-1 pl-9 pr-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
-        </div>
-                
-        <div class="flex justify-end my-4">
-          <button routerLink="/add-user" class="bg-slate-800 hover:bg-blue-700 text-white text-sm font-bold py-1 px-4 mx-2 rounded">
-             Add User
-          </button>
-        </div>
-      </label>
 
+  <!-- search and button add -->
+  <div class=" max-w-full my-6 relative">
+    <!-- <span class="sr-only">Search</span>
+    <span class="inset-y-0 left-0 flex items-center pl-2">
+      <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+        ...</svg>
+    </span> -->
+    <div class="-left-5">
+      <input class="placeholder:italic placeholder:text-slate-400  bg-white border border-slate-300 rounded-md mb-2 py-[6px] pl-2 pr-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 " placeholder="Search for anything..." type="text" name="search"/>
     </div>
+            
+    <div class=" absolute top-0 right-0">
+      <button routerLink="/user-c" class="bg-slate-800 hover:bg-blue-700 text-white text-sm font-bold p-2 rounded ">Add User</button>
+    </div>
+  
+</div>
 
 <!-- table of user - use dummy data -->
     <div class="overflow-auto rounded-lg shadow">
@@ -39,11 +37,11 @@
 
         <thead class="bg-gray-50 border-b-2 border-gray-200 ">
           <tr>
-            <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Email</th>
-            <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Name</th>
-            <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Phone Number</th>
-            <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Role</th>
-            <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">Action</th>
+            <th class="w-20 p-3 text-sm font-bold tracking-wide text-left">Email</th>
+            <th class="w-20 p-3 text-sm font-bold tracking-wide text-left">Name</th>
+            <th class="w-24 p-3 text-sm font-bold tracking-wide text-left">Phone Number</th>
+            <th class="w-24 p-3 text-sm font-bold tracking-wide text-left">Role</th>
+            <th class="w-32 p-3 text-sm font-bold tracking-wide text-left">Action</th>
           </tr>
         </thead>
 
@@ -57,7 +55,7 @@
               082112404351</td>      
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">Manager</td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-              <button routerLink="/" class="bg-blue-500 hover:bg-blue-600text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
+              <button routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
                 Edit
               </button>
               <button routerLink="/" class="bg-rose-500 hover:bg-rose-600 text-gray-800 font-bold py-1 px-2 my-1 rounded">
@@ -77,10 +75,10 @@
             </td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">Employee</td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
+              <button routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
                 Edit
               </button>
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-2 my-1 rounded">
+              <button routerLink="/" class="bg-rose-500 hover:bg-rose-600 text-gray-800 font-bold py-1 px-2 my-1 rounded">
                 Del
               </button>
             </td>
@@ -94,10 +92,10 @@
               082194585124</td>      
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">Employee</td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
+              <button routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
                 Edit
               </button>
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-2 my-1 rounded">
+              <button routerLink="/" class="bg-rose-500 hover:bg-rose-600 text-gray-800 font-bold py-1 px-2 my-1 rounded">
                 Del
               </button>
             </td>
@@ -114,10 +112,10 @@
             </td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">Manager</td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
+              <button routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
                 Edit
               </button>
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-2 my-1 rounded">
+              <button routerLink="/" class="bg-rose-500 hover:bg-rose-600 text-gray-800 font-bold py-1 px-2 my-1 rounded">
                 Del
               </button>
             </td>
@@ -131,10 +129,10 @@
               082139485313</td>      
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">Employee</td>
             <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
+              <button routerLink="/" class="bg-blue-500 hover:bg-blue-600 text-gray-800 font-bold py-1 px-1 my-1 mx-1 rounded">
                 Edit
               </button>
-              <button routerLink="/" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-1 px-2 my-1 rounded">
+              <button routerLink="/" class="bg-rose-500 hover:bg-rose-600 text-gray-800 font-bold py-1 px-2 my-1 rounded">
                 Del
               </button>
             </td>
@@ -181,7 +179,7 @@
 </div>
 
 <!-- table of user - use database-->
-  <div class="flex flex-col gab-8 container mx-auto">
+  <!-- <div class="flex flex-col gab-8 container mx-auto">
     <h1 class="text-4xl font-bold">User</h1>
     <table style="width: 100%;">
       <thead>
@@ -206,7 +204,7 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div> -->
 
 
   
