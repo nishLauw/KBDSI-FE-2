@@ -1,0 +1,59 @@
+<main>
+  <form>
+    <!-- <div class="bg-red-500 px-3 py-2 ronded text-gray-100 mb-3">
+          <p>wrong email entered</p>
+        </div> -->
+    <h2 class="flex items-center justify-center font-bold py-2 mb-12 text-3xl">
+      Create Account
+    </h2>
+
+    <label class="text-gray-700">Username</label>
+    <input
+      class="w-full py-2 bg-gray-100 text-gray-500 px-1 outline-none mb-4"
+      type="email"
+      required
+    />
+    <label class="text-gray-700">Name</label>
+    <input
+      class="w-full py-2 bg-gray-100 text-gray-500 px-1 outline-none mb-4"
+      type="name"
+      required
+    />
+    <label class="text-gray-700">Phone</label>
+    <input
+      class="w-full py-2 bg-gray-100 text-gray-500 px-1 outline-none mb-4"
+      type="phone"
+      required
+    />
+    <label class="text-gray-700">Password</label>
+    <input
+      class="w-full py-2 bg-gray-100 text-gray-500 outline-none px-1 mb-2"
+      type="password"
+      required
+    />
+    <!-- <p class="text-gray-500 -mt-1 mb-7 text-xs">
+      Password must be at least 6 characters
+    </p> -->
+    <label class="text-gray-700">Reapeat Password</label>
+    <input
+      class="w-full py-2 bg-gray-100 text-gray-500 px-1 outline-none mb-2"
+      type="password"
+      required
+    />
+
+    <div class="flex justify-end mt-8">
+      <button
+        routerLink="/user"
+        class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 mx-1 rounded"
+      >
+        Cancel
+      </button>
+      <!-- (click)="simpleAlert()" -->
+      <button
+        class="bg-slate-800 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-1 rounded"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</main>

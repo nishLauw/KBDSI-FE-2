@@ -25,9 +25,13 @@
               "src/assets"
             ],
             "styles": [
+
               "src/styles.css"
+              
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {
@@ -88,9 +92,12 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/sweetalert2/src/sweetalert2.css"
+              "node_modules/sweetalert2/src/sweetalert2.css",
+              "node_modules/font-awesome/css/all.min.css"
             ],
-            "scripts": []
+           "scripts": [
+            "node_modules/alpinejs/dist/cdn.min.js"
+          ]
           }
         }
       }
