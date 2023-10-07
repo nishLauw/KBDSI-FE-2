@@ -6,6 +6,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { UserComponent } from './components/user/user.component';
@@ -24,6 +25,19 @@ import { TransactionUpdateComponent } from './components/transaction-update/tran
 import { ReminderUpdateComponent } from './components/reminder-update/reminder-update.component';
 import { ComponentsComponent } from './components/components.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+=======
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { UserComponent } from './user/user.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ReminderComponent } from './reminder/reminder.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { UserUpdateComponent } from './user-update/user-update.component';
+import { UserCreateComponent } from './user-create/user-create.component';
+import { ReminderCreateComponent } from './reminder-create/reminder-create.component';
+import { TransactionComponent } from './transaction/transaction.component';
+import { TransactionCreateComponent } from './transaction-create/transaction-create.component';
+>>>>>>> 6dd32c688efd0693a56f26ebcd1ce895fa14a3d7
 
 
 @NgModule({
@@ -39,6 +53,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReminderCreateComponent,
     TransactionComponent,
     TransactionCreateComponent,
+<<<<<<< HEAD
     EbudgetingComponent,
     BookkeepingComponent,
     EbudgetingCreateComponent,
@@ -46,6 +61,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReminderUpdateComponent,
     ComponentsComponent,
 
+=======
+>>>>>>> 6dd32c688efd0693a56f26ebcd1ce895fa14a3d7
 
 
   ],
