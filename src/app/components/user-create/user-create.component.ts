@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
+// import Flowbite from 'flowbite';
 
 
 @Component({
@@ -16,6 +17,13 @@ export class UserCreateComponent {
   alertWithSuccees(){
     Swal.fire ( "Oops, something went wrong!" );
 }
+//  openPopup() {
+//     Flowbite.showPopup({
+//       content: '<app-popup></app-popup>', // Komponen Angular untuk pop-up
+//       width: '500px', // Lebar pop-up
+//       height: '300px' // Tinggi pop-up
+//     });
+//   }
 
 }
 

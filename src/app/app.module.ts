@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
+// import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,6 +24,7 @@ import { TransactionUpdateComponent } from './components/transaction-update/tran
 import { ReminderUpdateComponent } from './components/reminder-update/reminder-update.component';
 import { ComponentsComponent } from './components/components.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
+    // MatButtonModule,
     MatFormFieldModule,
     MatDialogModule,
     SweetAlert2Module.forRoot()

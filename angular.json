@@ -93,10 +93,12 @@
             "styles": [
               "src/styles.css",
               "node_modules/sweetalert2/src/sweetalert2.css",
-              "node_modules/font-awesome/css/all.min.css"
+              "node_modules/font-awesome/css/all.min.css",
+              "node_modules/flowbite/dist/css/flowbite.min.css"
             ],
            "scripts": [
-            "node_modules/alpinejs/dist/cdn.min.js"
+            "node_modules/alpinejs/dist/cdn.min.js",
+            "node_modules/flowbite/dist/js/flowbite.min.js"
           ]
           }
         }
