@@ -16,8 +16,7 @@ export class AppComponent implements OnInit {
   simpleAlert(){
     Swal.fire(
       'simple Notification');
-<<<<<<< HEAD
-      
+
   }
    ngOnInit(): void {
     initFlowbite();
@@ -27,9 +26,5 @@ export class AppComponent implements OnInit {
 
 
 
-=======
-  }
-}
 
 
->>>>>>> 6dd32c688efd0693a56f26ebcd1ce895fa14a3d7
