@@ -23,7 +23,7 @@ import { EbudgetingCreateComponent } from './components/ebudgeting-create/ebudge
 import { TransactionUpdateComponent } from './components/transaction-update/transaction-update.component';
 import { ReminderUpdateComponent } from './components/reminder-update/reminder-update.component';
 import { ComponentsComponent } from './components/components.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +50,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
   ],
   imports: [
-    NgbModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
